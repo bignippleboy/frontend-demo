@@ -4,16 +4,42 @@
 <head>
     <title>前端demo</title>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <script src='js/libs/jquery.js' type='text/javascript'></script>
+    <script src='js/libs/jquery.reel.js' type='text/javascript'></script>
     <script type="text/javascript" data-main="js/main" src="js/libs/require.js"></script>
     <!-- <script type="text/javascript" src="js/lib/text.js"></script> -->
 </head>
 
 <body>
-	<a href="#page-b">切换到page b</a>
-	<a href="#page-a">切换到page a</a>
-    <div id="page-a"></div>
-    <div id="page-b"></div>
-    abc2
+    <div id="page-a">
+		<a href="#tour_page">切换到page b</a>
+    </div>
+    <div id="page-b">
+		<a href="#page-a">切换到page a</a>
+    </div>
+    <div id="tour_page" style="height: 100%">
+    	<a href="#page-a">切换a</a>
+    </div>
+    <div id="reel_page" style="height: 100%">
+        <a href="#tour_page">切换回tour</a>
+        <!-- <img src="img/animal.jpg" width="165" height="109"
+          class="reel"
+          data-image="img/animal-locomotion.jpg"
+          data-frames="19"
+          data-frame="8"
+          data-footage="5"
+          data-speed="0.4"> -->
+          <!-- <img id="image" src="img/animal.jpg" width="165" height="109" />
+    <script>
+      $('#image').reel({
+        image:       'img/animal-locomotion.jpg',
+        frames:      19,
+        frame:       8,
+        footage:     5,
+        speed:       0.4
+      });
+    </script> -->
+    </div>
 </body>
 
 </html>

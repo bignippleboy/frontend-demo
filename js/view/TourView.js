@@ -1,7 +1,7 @@
-define(['jquery','underscore','view/kenview','text!template/pagea-template.html'], function($,_,Kenview,template_a) {
+define(['jquery','underscore','view/kenview','text!template/tour-template.html'], function($,_,Kenview,TourTemplate) {
     return Kenview.extend({
 
-    	el: $("#page-a"),
+    	el: $("#tour_page"),
 
     	show: function() {
     		console.log('pagea show');
@@ -17,7 +17,7 @@ define(['jquery','underscore','view/kenview','text!template/pagea-template.html'
 
         render: function() {
         	console.log('page a render');
-            this.$el.html(this.$el.html()+template_a);
+            this.$el.html(this.$el.html()+TourTemplate);
             Kenview.prototype.render.call(this);
         }
     });
